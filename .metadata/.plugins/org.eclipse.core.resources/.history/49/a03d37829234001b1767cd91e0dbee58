@@ -1,0 +1,25 @@
+package com.manipal.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class UserServiceTest {
+	
+	@Autowired
+	
+	
+	@Test
+	void testRegistation() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testUserDetails() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=twitter-clone-v2/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.manipal.service{UserService.java[UserService" modifiers="1" timestamp="1606815782976"/>
+    <typeInfo handle="=twitter-clone-v2/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.manipal.service{LoginService.java[LoginService" modifiers="1" timestamp="1606815791375"/>
+    <typeInfo handle="=twitter-clone-v2/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.manipal.service{TweetService.java[TweetService" modifiers="1" timestamp="1606748342495"/>
+    <typeInfo handle="=twitter-clone-v2/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.manipal.controller{UserController.java[UserController" modifiers="1" timestamp="1606641720283"/>
+    <typeInfo handle="=twitter-clone-v2/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.manipal.controller{LoginController.java[LoginController" modifiers="1" timestamp="1606639168948"/>
+    <typeInfo handle="=twitter-clone-v2/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.manipal.controller{TweetController.java[TweetController" modifiers="1" timestamp="1606748308135"/>
+</typeInfoHistroy>

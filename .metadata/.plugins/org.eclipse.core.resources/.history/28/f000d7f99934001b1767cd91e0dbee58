@@ -1,0 +1,64 @@
+package com.manipal.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+
+import com.manipal.model.Tweet;
+import com.manipal.repository.TweetRepository;
+
+@SpringBootTest
+class TweetServiceTest {
+	
+	@Autowired 
+	private TweetService tweetService;
+	
+	@MockBean
+	private TweetRepository tweetRepository;
+
+	@Test
+	void testRetrieveAllTweets() {
+		
+		Tweet tweet = new Tweet(1,"Param Attri", "Pattri", true, "#Diwali", LocalDateTime.now(), "tweet image", "tweet Avatar");
+		Tweet tweet2 = new Tweet(1,"Prateek", "Pjoshi", false, "#Holi", LocalDateTime.now(), "tweet image", "tweet Avatar");
+		List<Tweet> tweets = new ArrayList<Tweet>();
+		tweets.add(tweet);
+		tweets.add(tweet2);
+
+		when(tweetRepository.findAll()).thenReturn(tweets);
+		assertEquals(2, tweetService.retrieveAllTweets().size());
+	}
+
+	@Test
+	void testAddOrUpdateTweet() {
+		Tweet tweet = new Tweet(1,"Param Attri", "Pattri", true, "#Diwali", LocalDateTime.now(), "tweet image", "tweet Avatar");
+		tweetService.addOrUpdateTweet(tweet);
+		verify(tweetRepository, times(1)).save(tweet);
+	}
+
+	@Test
+	void testRetrieveTweetsByUserName() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testDeleteTweetById() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testRetrieveTweetsByTweetId() {
+		fail("Not yet implemented");
+	}
+
+}

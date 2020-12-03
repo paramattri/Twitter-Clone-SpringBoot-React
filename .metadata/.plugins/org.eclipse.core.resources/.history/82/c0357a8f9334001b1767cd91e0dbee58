@@ -1,0 +1,19 @@
+package com.manipal.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class LoginServiceTest {
+
+	@Test
+	void testAddLoginDetails() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testLoginValidation() {
+		fail("Not yet implemented");
+	}
+
+}

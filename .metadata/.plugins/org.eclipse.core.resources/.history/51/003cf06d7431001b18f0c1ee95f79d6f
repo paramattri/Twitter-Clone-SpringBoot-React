@@ -1,0 +1,16 @@
+package com.manipal.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.manipal.service.TweetService;
+
+@RestController
+public class TweetController {
+
+	@Autowired
+	private TweetService tweetService;
+	
+	@GetMapping("/twitter/tweets")
+}

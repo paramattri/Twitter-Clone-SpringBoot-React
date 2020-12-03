@@ -1,0 +1,36 @@
+package com.manipal.controller;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.web.servlet.MockMvc;
+
+import com.manipal.service.LoginService;
+import com.manipal.service.UserService;
+
+@WebMvcTest(UserController.class)
+class UserControllerTest {
+	
+	@Autowired
+	private MockMvc mvc;
+	
+	@MockBean
+	private UserService userService;
+	
+	@MockBean
+	private LoginService loginService;
+	
+	@Test
+	void testRegistration() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testUserDetails() {
+		fail("Not yet implemented");
+	}
+
+}

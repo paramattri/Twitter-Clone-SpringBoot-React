@@ -1,0 +1,21 @@
+package com.manipal.controller;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+
+@WebMvcTest
+class UserControllerTest {
+
+	@Test
+	void testRegistration() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testUserDetails() {
+		fail("Not yet implemented");
+	}
+
+}

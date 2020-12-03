@@ -1,0 +1,55 @@
+package com.manipal.model;
+
+import java.time.LocalDateTime;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+@Entity
+@Table(name = "tweet")
+public class Tweet {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int tweetId;
+	
+	private String displayName;
+	private String userName;
+	private boolean verified = false;
+	
+	@NotBlank(message = "*Cannot Post Empty Tweet")
+	@Size(max=300)
+	private String tweetBody;
+	
+	@JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
+	private LocalDateTime creationTime; 
+	
+	private String tweetImage;
+	private String avatar;
+	
+	public Tweet() {}
+	
+	public Tweet(int tweetId, String displayName, String userName, boolean verified,
+			@NotBlank(message = "*Cannot Post Empty Tweet") @Size(max = 300) String tweetBody,
+			LocalDateTime creationTime, String tweetImage, String avatar) {
+		super();
+		this.tweetId = tweetId;
+		this.displayName = displayName;
+		this.userName = userName;
+		this.verified = verified;
+		this.tweetBody = tweetBody;
+		this.creationTime = creationTime;
+		this.tweetImage = tweetImage;
+		this.avatar = avatar;
+	}
+	
+	
+	
+}
