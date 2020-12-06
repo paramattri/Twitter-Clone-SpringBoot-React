@@ -31,20 +31,20 @@ class UserControllerTest {
 	@MockBean
 	private LoginService loginService;
 	
-	@Test
-	void testRegistration() throws JsonProcessingException, Exception {
-		
-		ObjectMapper objectMapper = new ObjectMapper();
-		User user = new User("Param Attri","Pattri","param@gmail.com","qwerty","user avatar");
-		
-		mvc.perform(post("/twitter/register")
-				.content(objectMapper.writeValueAsString(user))
-				.accept(MediaType.APPLICATION_JSON)
-				.contentType(MediaType.APPLICATION_JSON))
-				.andExpect(status().isOk());
-		
-		when(userService.registation(user)).thenReturn("Success");
-	}
+//	@Test
+//	void testRegistration() throws JsonProcessingException, Exception {
+//		
+//		ObjectMapper objectMapper = new ObjectMapper();
+//		User user = new User("Param Attri","Pattri","param@gmail.com","qwerty","user avatar");
+//		
+//		mvc.perform(post("/twitter/register")
+//				.content(objectMapper.writeValueAsString(user))
+//				.accept(MediaType.APPLICATION_JSON)
+//				.contentType(MediaType.APPLICATION_JSON))
+//				.andExpect(status().isOk());
+//		
+//		when(userService.registation(user)).thenReturn("Success");
+//	}
 
 	@Test
 	void testUserDetails() throws Exception {	
