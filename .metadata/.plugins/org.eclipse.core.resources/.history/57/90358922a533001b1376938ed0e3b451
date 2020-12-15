@@ -1,9 +1,0 @@
-package com.manipal.util;
-
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-
-public class PasswordEncoderUtil {
-	
-	
-	BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder(20);
-}

@@ -28,7 +28,9 @@ function App() {
         </Switch>
 
       </Router>
-      
+      {/* <Sidebar/>
+      <Feed/>
+      <Widgets/> */}
     </div>
   );
 }
