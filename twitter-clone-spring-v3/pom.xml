@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.manipal</groupId>
-	<artifactId>twitter-clone-v2</artifactId>
+	<artifactId>twitter-clone-v3</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>twitter-clone-v2</name>
+	<name>twitter-clone-v3</name>
 	<description>Twitter Clone Using React</description>
 
 	<properties>
