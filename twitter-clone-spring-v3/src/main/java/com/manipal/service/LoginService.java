@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 
 import com.manipal.model.Login;
 import com.manipal.repository.LoginRepository;
-//import com.manipal.util.PasswordEncoderUtil;
 
 @Service
 public class LoginService {
@@ -19,10 +18,8 @@ public class LoginService {
 	
 	public boolean loginValidation(Login login) {
 		
-		//PasswordEncoderUtil passwordEncoderUtil = new PasswordEncoderUtil();
 		Login loginInfo = loginRepository.findByUserName(login.getUserName());
 		String password = loginInfo.getPassword();
-		//if(passwordEncoderUtil.getPasswordEncoder().matches(login.getPassword(), password))
 		if(password.equals(login.getPassword()))
 			return true;
 		else

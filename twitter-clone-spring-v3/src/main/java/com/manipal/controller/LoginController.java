@@ -21,7 +21,6 @@ public class LoginController {
 	
 		boolean isValidated = loginService.loginValidation(login);
 		if(isValidated) {
-			//CurrentUserNameUtil.setCurrentUserName(login.getUserName());
 			return "Success";
 		}
 		else

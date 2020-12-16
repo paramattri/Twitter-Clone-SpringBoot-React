@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 
 import com.manipal.model.User;
 import com.manipal.repository.UserRepository;
-//import com.manipal.util.PasswordEncoderUtil;
+
 
 @Service
 public class UserService {
@@ -22,9 +22,6 @@ public class UserService {
 	
 	public String registation(User user) {
 		
-		//PasswordEncoderUtil passwordEncoderUtil = new PasswordEncoderUtil();
-		//System.out.println(passwordEncoderUtil.bCryptPasswordEncoder(user.getPassword()));
-		//user.setPassword(passwordEncoderUtil.bCryptPasswordEncoder(user.getPassword()));
 		ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
 		Validator validator = factory.getValidator();
 		Set<ConstraintViolation<User>> violations = validator.validate(user);

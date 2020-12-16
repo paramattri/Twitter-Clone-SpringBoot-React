@@ -46,8 +46,7 @@ public class TweetController {
 	
 	@GetMapping("/twitter/tweets/{id}")
 	public Tweet getTweetById(@PathVariable int id) {
-		Tweet tweet = tweetService.retrieveTweetsByTweetId(id);
-		return tweet;
+		return tweetService.retrieveTweetsByTweetId(id);
 	}
 	
 	@PutMapping("/twitter/tweets/{id}")
