@@ -38,5 +38,10 @@ Functionalities:
 
 <img src="/project-images/Twitter_Login.png" width="700">
 
+3) *Project Demo*
+
+<img src="/project-images/Twitter_Clone_Demo.gif" width="700">
+
+
 
 **Latest Version: twitter-clone-spring-v3 folder(backend) & twitter-clone-react-v3 folder(frontend)**
