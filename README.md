@@ -4,13 +4,22 @@
 Developed a Twitter Clone where user can tweet and perform various functionalities related to tweets.
 
 Functionalities:
-  1) User Registration
-  2) User Login
-  3) Adding a tweet
-  4) Updating a tweet
-  5) Deleting a tweet
-  6) Liking a tweet
-  7) Filter Search
+  * User Registration
+  * User Login
+  * Adding a tweet
+  * Updating a tweet
+  * Deleting a tweet
+  * Liking a tweet
+  * Filter Search
 
-## Application Architecture
-![Architecture](https://drive.google.com/file/d/1J9w1mLErAgUygxAoRXwEtsMrA6BXrE7q/view?usp=sharing)
+## Technology Stack
+
+  * Programming language: Java
+  * Backend: Spring Boot
+  * Frontend: React JS, Material UI
+  * Database: MYSQL
+  * API Documentation: Swagger 
+  * Build Tool: Maven
+  * Backend Testing: Junit, Mockito
+  * Frontend Testing: Jest, Enzyme
+  * Code Quality: SonarQube
