@@ -12,6 +12,10 @@ Functionalities:
   * Liking a tweet
   * Filter Search
 
+## Application Architecture
+
+<img src="/project-images/Application_Architecture.png" width="700">
+
 ## Technology Stack
 
   * Programming language: Java
@@ -23,5 +27,16 @@ Functionalities:
   * Backend Testing: Junit, Mockito
   * Frontend Testing: Jest, Enzyme
   * Code Quality: SonarQube
+
+## Project Images
+
+1) *Registration Page*
+
+<img src="/project-images/Twitter-Registration.png" width="700">
+
+2) *Login Page*
+
+<img src="/project-images/Twitter_Login.png" width="700">
+
 
 **Latest Version: twitter-clone-spring-v3 folder(backend) & twitter-clone-react-v3 folder(frontend)**
