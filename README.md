@@ -11,3 +11,6 @@ Functionalities:
   5) Deleting a tweet
   6) Liking a tweet
   7) Filter Search
+
+## Application Architecture
+![Architecture](https://drive.google.com/file/d/1J9w1mLErAgUygxAoRXwEtsMrA6BXrE7q/view?usp=sharing)
