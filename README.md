@@ -23,3 +23,5 @@ Functionalities:
   * Backend Testing: Junit, Mockito
   * Frontend Testing: Jest, Enzyme
   * Code Quality: SonarQube
+
+**Latest Version: **twitter-clone-spring-v3 folder(backend) & twitter-clone-react-v3 folder(frontend)
