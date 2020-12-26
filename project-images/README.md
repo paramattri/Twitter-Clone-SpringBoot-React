@@ -1,1 +1,1 @@
-## Images related to project. 
+## Images related to project
